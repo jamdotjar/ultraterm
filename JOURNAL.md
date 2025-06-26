@@ -37,4 +37,39 @@ The basic case shapes are done, so I'm going to start to try laying out part loc
 
 <img width="282" alt="image" src="https://github.com/user-attachments/assets/10fd5ce8-799a-46fc-939c-b3ef852cb643" />
 
-> *time spent: 3 hrs
+> *time spent: 3 hrs*
+
+### 2025/06/21 
+Ahhhhhhh, there was so much to do. Now I guess I have to speedrun this in two weeks.
+ESP32 variant changed to a SEEED Xaoi esp32s3 for the smaller form factor, and builtin battery charging. 
+The final parts list is
+- XAIO Esp32s3
+- ILI9341 2.9 inch TFT display
+- [2k mAH liPo](https://www.aliexpress.com/item/1005008129110763.html?aem_p4p_detail=202506221800583223276838451580005928444&algo_exp_id=9986c4f7-9e79-42c7-89a9-f8e37e361f89-7&pdp_ext_f=%7B%22order%22%3A%22640%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis!CAD!18.58!1.39!!!95.19!7.12!%402103205117506404581112585e1741!12000043904507912!sea!CA!6379572868!ABX&curPageLogUid=IeYcnJN452sK&utparam-url=scene%3Asearch%7Cquery_from%3A&search_p4p_id=202506221800583223276838451580005928444_2)
+- JST PH 2.0 socket
+- 3 buttons ( idk what kind will fit yet )
+- MicroSD card reader
+- TRRS jack
+I also figured out that there's a very convenient little notch on the back where all of the io fits perfectly, which I'm very happy about, although it does make me a little scared about how big this will actually be
+<img width="570" alt="image" src="https://github.com/user-attachments/assets/f15ded9c-4c46-4d10-a776-3f2b9c0b5eee" />
+I've dumped all of the parts into kicad so now I just need to figure out how to actually connect it to the MCU, I'm slightly worried about the limited pin count, i might need to cut the TRRS jack, but I'm not too invested in that.
+<img width="595" alt="image" src="https://github.com/user-attachments/assets/b5280801-0c0b-44a4-8bb3-b2bfa5ff7d60" />
+
+
+> * time spent: 2hrs*
+
+### 2025/06/25
+Picking up from where I was last time, i'm trying to figure out how to interface with the SD card in SPI mode so I'm reading through the specifications for that. Also debating whether a touchscreen would be better. It is more lore accurate, and it might make interfacing easier, but I'm not sure if the cost/complexity overhead is worth it. I'll look into it more after the microSD card bit is done. 
+After about an hour of bashing my head against the wall, it turns out the SD card can be wired directly to my MCU... fun. 
+The schematic is finished, the display has changed once again to a model with basic resistive touch. At worst it's a dollar or so more expensive, and at best UX is a lot easier to design.
+Ther schematic so far:
+
+<img width="381" alt="image" src="https://github.com/user-attachments/assets/8b4c0721-0660-4fb5-86cf-093755cdfab8" />
+
+I'm curretntly really far into trying to figure out how to wire the reset pin to power so it automatically resets when the device turns on, finally figured out I just needed a LM809
+
+<img width="283" alt="image" src="https://github.com/user-attachments/assets/533193e1-a5b7-4feb-baed-df708970530a" />
+
+
+
+
