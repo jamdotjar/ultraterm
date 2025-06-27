@@ -69,7 +69,15 @@ Ther schematic so far:
 I'm curretntly really far into trying to figure out how to wire the reset pin to power so it automatically resets when the device turns on, finally figured out I just needed a LM809
 
 <img width="283" alt="image" src="https://github.com/user-attachments/assets/533193e1-a5b7-4feb-baed-df708970530a" />
+Now for PCB, The main thing is making all the IO line up with the bottom port, and having the screen be in roughly the right spot as well. The front buttons will probably need to be a seperate PCB somehow. From my estimations in fusion, there will be a 36mm gap between the bottom of the LCD and the bottom of the IO, which *should* be enough to fit everything.
 
+> *time spent: 4hrs 😭*
 
+### 2025/06/26
+I'm trying to figure out the PCB layout, the three main  struggles are how to connect the buttons, where the power switch goes, and how to get the IO to fit in it's slot. 
+
+Some finagiling later I've decided that I'm just leaving a really thin little spindle to get the display connector, and then use the blank space for a seperate button plate, and potentially a microsd card adapter. This is what the layout looks like *so* far, hopefully I dont need many changes for routing. I'm mainly trying to keep this under the 100x100mm jlcpcb cheap factor.
+
+<img width="686" alt="image" src="https://github.com/user-attachments/assets/27c0af24-9a46-49e0-a1b6-7860d67e8727" />
 
 
