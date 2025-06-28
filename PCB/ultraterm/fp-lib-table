@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "XAIO")(type "KiCad")(uri "${KIPRJMOD}/XAIO")(options "")(descr ""))
+)
