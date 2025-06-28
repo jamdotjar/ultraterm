@@ -80,4 +80,27 @@ Some finagiling later I've decided that I'm just leaving a really thin little sp
 
 <img width="686" alt="image" src="https://github.com/user-attachments/assets/27c0af24-9a46-49e0-a1b6-7860d67e8727" />
 
+> *time spent: 3hrs*
 
+### 2025/06/27
+The PCB had a bit of extra room near the top, so I added a small microSD to SD card adapter. Mainly a convenience thing, so I can use both, and this way I can put whatever silkscreen I want on it.
+
+<img width="364" alt="image" src="https://github.com/user-attachments/assets/4f5d33f9-e619-4590-a979-9d5006dab554" />
+
+The board is structurally complete, and fully panelized, now I just need to figure out how to fit everything into the case. Something tells me mounting these is going to be a bit of a pain. (ignore the blue sc card reader)
+
+<img width="949" alt="image" src="https://github.com/user-attachments/assets/e0d9433e-6f53-4ea7-b5d9-0c417bebddc7" />
+
+PCB is done though, so i'm happy abt that. 
+Never mind. I forgot the orginal was desinged around a 2._8_ inch screen, so now the positioning is all off. Time to go fix that, yayyyyy.
+The midnight grind session has brought many fruits. first, I found a suitable display replacement on aliexpress. Most displays had the pins below the holes, but I needed one with them between them so it would fit in the case ( from rough estimations ).
+
+<img width="208" alt="image" src="https://github.com/user-attachments/assets/7f47381c-aff8-4346-9d31-327be09d5915" />
+<img width="213" alt="image" src="https://github.com/user-attachments/assets/8e5d9753-61df-46d0-8de8-c24e62a628c5" />
+
+
+After making a new footprint, remeasuring my case, and moving it on the PBC. It took a while to reroute the extra pins, but I'm confident it'll be for the last time. 
+<img width="635" alt="image" src="https://github.com/user-attachments/assets/9272b2d7-523d-4be1-8a4b-2a8a64df5834" />
+
+
+> *time spent: 6hrs*
