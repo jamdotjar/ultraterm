@@ -110,9 +110,20 @@ Aaaand, kicad is refusing to export my step files with 3d component models. All 
 I still don't know why it wasn't working, but I added the missing components in fusion, so it's fine now. 
 After a bit of fiddling, here's it all laid out. 
 
-<img width="255" alt="image" src="https://github.com/user-attachments/assets/5b3ceb98-2d32-4dda-bd78-918f514ef7c4" />
-<img width="379" alt="image" src="https://github.com/user-attachments/assets/522c6a86-155e-4174-b552-781d42828e42" />
+<img width="256" alt="image" src="https://github.com/user-attachments/assets/5b3ceb98-2d32-4dda-bd78-918f514ef7c4" />
+<img width="256" alt="image" src="https://github.com/user-attachments/assets/522c6a86-155e-4174-b552-781d42828e42" />
 
-The next step is to make the solid block the case currently is into a proper shell, and add some things to help mount the PCB. 
+The next step is to make the solid block the case currently is into a proper shell, and add some things to help mount the PCB. I started by removing the surface details that would need to be cut out, and then I made the main case into a shell. To determine the wall thickness, I was having a tough time actually visualizing *how* each thickness would fare, so I printed out some samples for 1, 2 and 3mm.
+![testcubes](https://github.com/user-attachments/assets/05700fad-1064-4e38-b311-9c70b9f8da31)
+As expected, 1 suffered from flimsiness and light bleed. 3 was close to what I needed, but it was just a touch thick so I went with 2.5mm. This was half an hour for a decision between three numbers, I might need to reprioritize where I'm spending my time.
 
-> *time spent: 2hrs*
+Given I need to actually assemble this case, my main concern is how I'll split the body so it can go together in a somewhat reasonable manner. I  sketched up a few different options, trying to get a sense fro how to hide seams, while keeping it fairly easy to assemble.
+
+In the end, it makes the the most sense to me to cut it horizontally, similar to the blue line. (as well as potentially letting the bottom come off)
+
+<img width="348" alt="image" src="https://github.com/user-attachments/assets/a3468dda-b0fd-48a2-9a0e-67df79bf61dc">
+<img width="348" alt="image" src="https://github.com/user-attachments/assets/338f9647-5d16-47e4-9386-d929c028c92d">
+
+wrangling with fusion made today a bit of a slow day. I'm hoping to finish the case over the next two days, so I can whip up a rough version of the firmware, and polish the project for shipping. 
+
+> *time spent: 4hrs*
