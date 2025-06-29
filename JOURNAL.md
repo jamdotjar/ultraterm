@@ -102,5 +102,17 @@ The midnight grind session has brought many fruits. first, I found a suitable di
 After making a new footprint, remeasuring my case, and moving it on the PBC. It took a while to reroute the extra pins, but I'm confident it'll be for the last time. 
 <img width="635" alt="image" src="https://github.com/user-attachments/assets/9272b2d7-523d-4be1-8a4b-2a8a64df5834" />
 
-
 > *time spent: 6hrs*
+
+I brought the PCB into cad to check the dimensions one final time. 
+
+Aaaand, kicad is refusing to export my step files with 3d component models. All it's exprorting now is the fricking SD card slot, I have 0 clue why ( it worked fine an hour ago, which is how long i've been trying to fix this stupid problem )
+I still don't know why it wasn't working, but I added the missing components in fusion, so it's fine now. 
+After a bit of fiddling, here's it all laid out. 
+
+<img width="255" alt="image" src="https://github.com/user-attachments/assets/5b3ceb98-2d32-4dda-bd78-918f514ef7c4" />
+<img width="379" alt="image" src="https://github.com/user-attachments/assets/522c6a86-155e-4174-b552-781d42828e42" />
+
+The next step is to make the solid block the case currently is into a proper shell, and add some things to help mount the PCB. 
+
+> *time spent: 2hrs*
