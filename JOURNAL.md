@@ -103,7 +103,7 @@ After making a new footprint, remeasuring my case, and moving it on the PBC. It 
 <img width="635" alt="image" src="https://github.com/user-attachments/assets/9272b2d7-523d-4be1-8a4b-2a8a64df5834" />
 
 > *time spent: 6hrs*
-
+### 2025/06/08
 I brought the PCB into cad to check the dimensions one final time. 
 
 Aaaand, kicad is refusing to export my step files with 3d component models. All it's exprorting now is the fricking SD card slot, I have 0 clue why ( it worked fine an hour ago, which is how long i've been trying to fix this stupid problem )
@@ -127,3 +127,34 @@ In the end, it makes the the most sense to me to cut it horizontally, similar to
 wrangling with fusion made today a bit of a slow day. I'm hoping to finish the case over the next two days, so I can whip up a rough version of the firmware, and polish the project for shipping. 
 
 > *time spent: 4hrs*
+
+### 2025/06/29
+
+Most of today's work was solely focused on making a decent case in fusion. I spent way too long trying to figure out how to actually split the shell as I'd planned, and the initial split was really janky, which required a bit of clean-up, but now everything looks good.
+<img width="526" alt="image" src="https://github.com/user-attachments/assets/3b96eff5-bf60-4598-b5d6-4dd859aff559" />
+
+My biggest problem with the case is making sure that A: it looks at least *somewhat* like the real deal. B: The parts actually fit inside, and stay where they're supposed to.
+
+Scraping the game files for a reference back on the very first day mostly dealt with the accuracy concenrns ( hopefully my paint skiolls will be able to patch up the rest — wait, crap, skills. hmm, maybe I'll just get some blue filament )
+
+As for the parts fitting, I have *no clue* how that's gonna work. I know where they need to be, and while just supergluing them in, or encasing the entire thing in resin might *seem* convenient. I have a sneaking suspicion that that is a terrible idea, so I spent way to long thinking before I realized I can just use snap tabs. 
+
+<img width="375" alt="image" src="https://github.com/user-attachments/assets/789b5ba0-fc13-4d57-8acd-ab6669ec18dc" />
+
+After modeling them, I realized that they were clipping out of the back of the case, and proceeded to go mad trying to fix it. 
+The above sentence was written before I tried to do that, after writing, I did it wrong, second guessed myself, and wasted 30 minutes trying objectively worse solutions. Moral of the story is trust your gut or something I guess.
+
+<img width="227" alt="image" src="https://github.com/user-attachments/assets/92fa8a46-9633-4134-a40d-3d4a74d2e083" />
+
+In other news for today, I added the IO cutouts, I grill on the back I missed for some reason, and a screen cutout 
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/92a72ca8-8d4d-4029-afa3-ba4ce0f09d7a" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/68e89be0-6162-4636-ad72-5be1bdabd8ea" />
+
+> *time spent: 3hrs*
+
+
+
+
+
+
