@@ -1,7 +1,7 @@
 ---
 title: "Ultraterm"
 author: "Finn H"
-description: "A replica of the ULTRAKILL cybergrind terminal ( it plays music! )"
+description: "A bluetooth MP3 player styled as a miniature replica of the ULTRAKILL cybergrind terminal"
 created_at: "2025-05-19"
 ---
 
@@ -151,10 +151,35 @@ In other news for today, I added the IO cutouts, I grill on the back I missed fo
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/92a72ca8-8d4d-4029-afa3-ba4ce0f09d7a" />
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/68e89be0-6162-4636-ad72-5be1bdabd8ea" />
 
-> *time spent: 3hrs*
+> *time spent: 4hrs*
 
+### 2025/06/30
 
+After (sorta) figuring out mounting for the PCBs yesterday, I spent most of today adding mounting points for the screen, button panel, and battery ( which I kinda forgot existed until now ). I'd initially planned for the battery to be 2000 mAh for no reason at all, so I had to double check the expected battery life. I estimate the system will have a power draw of roughly 200mA, meaking the *ideal* battery life would be around 10 hours of constant use, which is totally fine by me. Worst comes to worst, the battery can just be swapped out, because I included a standard JST 2.0mm connector 👍
 
+I also added more snap-fit connectors to the case itself, so it can actually fit together ( and come apart ) all without any fasteners, which was one of my goals from the begininning.
+Once that was done, I finished by adding in all the details I forgot to model earlier, all the little slots, panels, and other sci-fi greebles. Anyways, since most of the changes were just small modelling changes, here's a screenshot dump:
 
+<img width="320" alt="image" src="https://github.com/user-attachments/assets/71256c3a-5af3-481f-add4-fec1a95736f4" />
+<img width="513" alt="image" src="https://github.com/user-attachments/assets/394b4bec-63ec-4a9f-bb14-8afe95d767ce" />
+<img width="192" alt="image" src="https://github.com/user-attachments/assets/b5003a0f-e961-4699-8f29-e21fe99fae96" />
+<img width="152" alt="image" src="https://github.com/user-attachments/assets/d9e5f061-5070-40ce-8add-c21eb8d9489e" />
+<img width="429" alt="image" src="https://github.com/user-attachments/assets/64927230-0c94-46b4-a45f-fee311b5635f" />
+<img width="122" alt="image" src="https://github.com/user-attachments/assets/b8323f6f-28a2-44eb-8009-8976893f00f5" />
+<img width="152" alt="image" src="https://github.com/user-attachments/assets/3a917478-0483-4f9a-a298-db79d7091dfc" />
+<img width="344" alt="image" src="https://github.com/user-attachments/assets/ef40a70e-6ccf-478f-81ee-0b01f238f150" />
+<img width="274" alt="image" src="https://github.com/user-attachments/assets/3255185a-7613-4b2d-adce-b9573e1aa479" />
+<img width="274" alt="image" src="https://github.com/user-attachments/assets/460f8bac-c688-4f05-b816-cbe695a30528" />
+<img width="534" alt="image" src="https://github.com/user-attachments/assets/39140b68-2eeb-4f26-a087-e66e5fd37e8f" />
+
+With that, I'd say the case is actually complete, leaving me ( technically ) 2/3 of the way through this process. The last step is a basic firmware, which only needs to do 3 things.
+1. Connect to bluetooth headphones
+2. Read and playback from the SD card
+3. Display controls for the above onscreen
+Once that's all done my stretch goals are to:
+- make it look as game accurate as possible
+- Let people upload files to the device either wirelessly, or when plugged in.
+
+> *time spent: 4hrs*
 
 
