@@ -182,4 +182,17 @@ Once that's all done my stretch goals are to:
 
 > *time spent: 4hrs*
 
+# 2025/07/01
+I started trying to get some sort of firmware made today. The first step was trying to figure out *how* to go about embedded firmware. A bit of googling led me to PlatformIO which seemed simple enough, while still giving me a fair amount of control. Luckily, I had an esp32s3 devboard lying around, so I can actually test at least part of my code. ( The bluetooth function, specifically and maybe the SD card if I'm feeling like soldering to the pads of one ). As of right now, I have uploaded some test code, but not much past that. 
+
+I took a bit of a break to make my BOM, because I'm pretty confident with the physical design at this point. Unfortunately, I did have to go back and edit my PCB as the SD card connecter I had chosed turns out to be discontinued.
+It also turns out the power switch I was using was not a toggle switch, so now I need to find one of those, and figure out where the hell to put it. So, uh, yeah. Awesome day, I've gone backwards. I needed to remodel the case to fit the new switch, so I guess I'll finish the BOM tomorrow, and speedrun some firmware.
+<img width="199" alt="image" src="https://github.com/user-attachments/assets/d9f14811-e6f9-4e51-86fa-9542e78b7e22" />
+
+
+> time spent: 3hrs*
+
+
+
+
 
