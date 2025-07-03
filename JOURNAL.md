@@ -182,7 +182,7 @@ Once that's all done my stretch goals are to:
 
 > *time spent: 4hrs*
 
-# 2025/07/01
+### 2025/07/01
 I started trying to get some sort of firmware made today. The first step was trying to figure out *how* to go about embedded firmware. A bit of googling led me to PlatformIO which seemed simple enough, while still giving me a fair amount of control. Luckily, I had an esp32s3 devboard lying around, so I can actually test at least part of my code. ( The bluetooth function, specifically and maybe the SD card if I'm feeling like soldering to the pads of one ). As of right now, I have uploaded some test code, but not much past that. 
 
 I took a bit of a break to make my BOM, because I'm pretty confident with the physical design at this point. Unfortunately, I did have to go back and edit my PCB as the SD card connecter I had chosed turns out to be discontinued.
@@ -192,7 +192,20 @@ It also turns out the power switch I was using was not a toggle switch, so now I
 
 > time spent: 3hrs*
 
+### 2025/07/02
 
+I finished the BOM today, which took a bit longer than I expected. Still, it's anothers step towards this being complete so I'm not too pressed about it. After the BOM, I jumped back into the firmware. My main goal for a hopepfully functional MVP is to connect to headphones, play audio to them, and have a button to like, shuffle or something. 
 
+SHIT, the esp32s3 doesn't support A2dp, so now I need a completely differnt chip, that'll be in a different form factor. yay. 
+why do things keep going wrong. ( granted, I should have researched better, but I thought the s3 would work ). 
 
+I found a suitable replacement board, the TinyPico. It it a fair bit more expensive, but i'm under budget so I think it's fine. after a lot of checking, it has everything I need:
+- Battery management
+- USBC
+- Small footprint
+- Bluetooth A2DP
+So that is now the core MCU, it's based on the esp32-pico d4, and it's going to do a great job. There are no avalable footprints or symbols, so I had to make those, which was a bit of a pain. One good thing to come out of this is that there was a spare few pins, so I was able to add a status indicator LED, something i've wanted to do for a bit. So, at least there was *a singular upside* to today.
+<img width="206" alt="image" src="https://github.com/user-attachments/assets/762f2767-f8fa-41f5-a0cd-91c244ed91ee" />
 
+> *time spent: six. hours. why. ( update, I worked more so it's actualy like 8 (
+> <img width="32" alt="image" src="https://github.com/user-attachments/assets/2893fa1a-da55-4c61-8477-e8c39727095e" /> )
