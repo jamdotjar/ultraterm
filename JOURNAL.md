@@ -206,6 +206,6 @@ I found a suitable replacement board, the TinyPico. It it a fair bit more expens
 - Bluetooth A2DP
 So that is now the core MCU, it's based on the esp32-pico d4, and it's going to do a great job. There are no avalable footprints or symbols, so I had to make those, which was a bit of a pain. One good thing to come out of this is that there was a spare few pins, so I was able to add a status indicator LED, something i've wanted to do for a bit. So, at least there was *a singular upside* to today.
 <img width="206" alt="image" src="https://github.com/user-attachments/assets/762f2767-f8fa-41f5-a0cd-91c244ed91ee" />
-
+I made a footprint, and completely rerouted my PCB. I kept the USB in the same spot, so the case design *should* still work 🙏. Now to hop back to firmware :yay:
 > *time spent: six. hours. why. ( update, I worked more so it's actualy like 8 (
 > <img width="32" alt="image" src="https://github.com/user-attachments/assets/2893fa1a-da55-4c61-8477-e8c39727095e" /> )
