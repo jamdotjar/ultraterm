@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "Seeed_Studio_XIAO_Series")(type "KiCad")(uri "${KIPRJMOD}/XAIO/Seeed_Studio_XIAO_Series.kicad_sym")(options "")(descr ""))
   (lib (name "GSD09002SDEU")(type "KiCad")(uri "/Users/finnh/Downloads/GSD09002SDEU/GSD09002SDEU.kicad_sym")(options "")(descr ""))
+  (lib (name "TinyPICO_Nano")(type "KiCad")(uri "/Users/finnh/Downloads/TinyPICO_Nano.kicad_sym")(options "")(descr ""))
 )
