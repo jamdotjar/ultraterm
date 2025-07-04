@@ -6,7 +6,7 @@ created_at: "2025-05-19"
 ---
 
 # Journal
-### 2025/05/19 ( and the past 3 days I didnt )
+### 2025/05/19 ( and the past 3 days I didnt journal )
 This has been mostly just research on *how* I'm actually pulling this off. I've ( tenatively ) setteled on this as a **very rough** list of what I'll use:
 - ESP32s3
 - Some sort of small TFT display
@@ -51,8 +51,11 @@ The final parts list is
 - MicroSD card reader
 - TRRS jack
 I also figured out that there's a very convenient little notch on the back where all of the io fits perfectly, which I'm very happy about, although it does make me a little scared about how big this will actually be
+
 <img width="570" alt="image" src="https://github.com/user-attachments/assets/f15ded9c-4c46-4d10-a776-3f2b9c0b5eee" />
+
 I've dumped all of the parts into kicad so now I just need to figure out how to actually connect it to the MCU, I'm slightly worried about the limited pin count, i might need to cut the TRRS jack, but I'm not too invested in that.
+
 <img width="595" alt="image" src="https://github.com/user-attachments/assets/b5280801-0c0b-44a4-8bb3-b2bfa5ff7d60" />
 
 
@@ -69,6 +72,7 @@ Ther schematic so far:
 I'm curretntly really far into trying to figure out how to wire the reset pin to power so it automatically resets when the device turns on, finally figured out I just needed a LM809
 
 <img width="283" alt="image" src="https://github.com/user-attachments/assets/533193e1-a5b7-4feb-baed-df708970530a" />
+
 Now for PCB, The main thing is making all the IO line up with the bottom port, and having the screen be in roughly the right spot as well. The front buttons will probably need to be a seperate PCB somehow. From my estimations in fusion, there will be a 36mm gap between the bottom of the LCD and the bottom of the IO, which *should* be enough to fit everything.
 
 > *time spent: 4hrs 😭*
@@ -100,6 +104,7 @@ The midnight grind session has brought many fruits. first, I found a suitable di
 
 
 After making a new footprint, remeasuring my case, and moving it on the PBC. It took a while to reroute the extra pins, but I'm confident it'll be for the last time. 
+
 <img width="635" alt="image" src="https://github.com/user-attachments/assets/9272b2d7-523d-4be1-8a4b-2a8a64df5834" />
 
 > *time spent: 6hrs*
@@ -205,7 +210,31 @@ I found a suitable replacement board, the TinyPico. It it a fair bit more expens
 - Small footprint
 - Bluetooth A2DP
 So that is now the core MCU, it's based on the esp32-pico d4, and it's going to do a great job. There are no avalable footprints or symbols, so I had to make those, which was a bit of a pain. One good thing to come out of this is that there was a spare few pins, so I was able to add a status indicator LED, something i've wanted to do for a bit. So, at least there was *a singular upside* to today.
+
 <img width="206" alt="image" src="https://github.com/user-attachments/assets/762f2767-f8fa-41f5-a0cd-91c244ed91ee" />
+
 I made a footprint, and completely rerouted my PCB. I kept the USB in the same spot, so the case design *should* still work 🙏. Now to hop back to firmware :yay:
 > *time spent: six. hours. why. ( update, I worked more so it's actualy like 8 (
 > <img width="32" alt="image" src="https://github.com/user-attachments/assets/2893fa1a-da55-4c61-8477-e8c39727095e" /> )
+
+### 2025/07/03
+
+After yesterday's fiasco, I am right back where I was before it all went pear shaped. So, firmware... take two ( with the slight downside that I can't actually test my code now ). 
+To start, I tried to figure out what my priorities would be for the first rough draft of my code. After a touch of thinking, I decided on the order of:
+- Headphone pairing
+- Audio playback
+- SD card reading
+- Button input
+- UI display
+- Touch input
+- Mass storage device
+For this, I'm mostly focusing on the first two for the prototype, then once I get the actual device and can test the rest of the functions, I'll do that.
+As for an actual application flow, I think
+1. bluetooth pairing
+2. Main menu ( shows info )
+3. Playback
+seems reasonable. I'll probably use LVGL for UI if I get there.
+
+I started off with the bluetooth. I managed to find a library that implemented A2DP audio source for arduino, that also seems to handle the connection logic for devices, so I was ablle to get a simple version of that all set up ( it just tries to pair to the first device it sees, maybe a bit of room for refinement in the future. From there, I started with file reading, to actually provide the audio stream. 
+
+After that, the main goal was to get some sort of interaction and input going. ( and maaaybe some output ). 
