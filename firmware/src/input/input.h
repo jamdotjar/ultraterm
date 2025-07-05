@@ -31,6 +31,8 @@ typedef void (*input_callback_t)(const input_event_t event); //create s a type f
 
 void input_init();
 void input_set_callback(input_callback_t callback);
+void handle_input(const input_event_t event); 
+void input_update(); 
 
 #endif // INPUT_H
 

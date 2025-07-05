@@ -66,3 +66,35 @@ void input_update() {
 
 }
 
+void handle_input(const input_event_t event) {// handles the event callback for input
+    switch (event.type) {
+        case INPUT_BUTTON:
+            switch (event.data.button) {
+                case BUTTON_LEFT:
+                    if (audioCommandQueue != NULL) {
+                        audio_command_t cmd = CMD_PREV;
+                        xQueueSend(audioCommandQueue, &cmd, 0);
+                    }
+                    break;
+                case BUTTON_RIGHT:
+                    if (audioCommandQueue != NULL) {
+                        audio_command_t cmd = CMD_NEXT;
+                        xQueueSend(audioCommandQueue, &cmd, 0);
+                    }
+                    break;
+                case BUTTON_SEL:
+                    if (audioCommandQueue != NULL) {
+                        audio_command_t cmd = CMD_PLAY;
+                        xQueueSend(audioCommandQueue, &cmd, 0);
+                    }
+                    break;
+            }
+            break;
+        case INPUT_TOUCH:
+            Serial.printf("Touch at (%d, %d)\n", event.data.touch.x, event.data.touch.y);
+             if (audioCommandQueue != NULL) { 
+                audio_command_t cmd = CMD_PAUSE;
+                xQueueSend(audioCommandQueue, &cmd, 0);
+            break;
+    }
+}

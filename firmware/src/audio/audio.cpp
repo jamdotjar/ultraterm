@@ -36,6 +36,10 @@ void audio_init() {
 }
 
 void audio_play() {
+    if is_paused {
+        resume_stream();
+        return;
+    }
     if (songs.empty()) {
         Serial.println("No songs to play");
         return;
