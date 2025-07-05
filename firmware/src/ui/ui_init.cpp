@@ -9,4 +9,5 @@ void ui_init() {
     // TODO: Setup UI task
     
     Serial.println("UI initialization complete");
+    
 }

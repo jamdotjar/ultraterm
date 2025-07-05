@@ -2,7 +2,6 @@
 
 #include "system/system_init.h"
 #include "ui/ui_init.h"
-#include "audio/a2dp_init.h"
 
 
 void setup() {
@@ -11,10 +10,9 @@ void setup() {
     
     system_init();
     ui_init();
-    audio_init();
+
+    Serial.println("Ultraterm firmware initialized");
 }
 
-void loop() {
-    // Main loop - Arduino handles task scheduling
-    delay(1000);
-}
+
+
