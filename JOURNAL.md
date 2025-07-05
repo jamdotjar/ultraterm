@@ -204,7 +204,7 @@ I finished the BOM today, which took a bit longer than I expected. Still, it's a
 SHIT, the esp32s3 doesn't support A2dp, so now I need a completely differnt chip, that'll be in a different form factor. yay. 
 why do things keep going wrong. ( granted, I should have researched better, but I thought the s3 would work ). 
 
-I found a suitable replacement board, the TinyPico. It it a fair bit more expensive, but i'm under budget so I think it's fine. after a lot of checking, it has everything I need:
+I found a suitable replacement board, the TinyPico. It it a fair bit more expensive, but I'm under budget so I think it's fine. ( also, the other board would have required me to get a hotplate, which would have been an additional $20 anyways ) after a lot of checking, it has everything I need:
 - Battery management
 - USBC
 - Small footprint
@@ -238,3 +238,23 @@ seems reasonable. I'll probably use LVGL for UI if I get there.
 I started off with the bluetooth. I managed to find a library that implemented A2DP audio source for arduino, that also seems to handle the connection logic for devices, so I was ablle to get a simple version of that all set up ( it just tries to pair to the first device it sees, maybe a bit of room for refinement in the future. From there, I started with file reading, to actually provide the audio stream. 
 
 After that, the main goal was to get some sort of interaction and input going. ( and maaaybe some output ). 
+
+> * time spent: 3hrs*
+
+### 2025/07/04
+
+I'm getting pretty close to finishing this, I can feel it. I spent a bit of time last night polishing up the README, so now all I'll need to do is add some nice renders, finish this firmware, and I'm done!
+
+I hopped back into my firmware with the input management, and I got through the first half of a callback system, that should be OK for the buttons. I think the touch might need a seperate handler once I've gotten LVGL running, but in the meantime I've just set it as another "button".
+
+I also had to go and fix some of the storage code, because I'd used the wrong library example as a base, so had to redo the PCM stuff. Now I'm going back to input, and as a last goal I'll try to get a simple state display runnning. I actually think all of my input and playback should work! It all at least compiles, which gives me a fair bit of hope. 
+
+Now for some actual interaction, then I can whip up a 'lil demo UI! I don't want to attempt the final UI until the final version, but it's close! 
+
+I added a basic interaction system, that took way longer than anticipated due to having to handle my multi-core concept of having one handle playback and the other handling input and UI to let both run smoothly. It turns out i forgot how hard communicating between cores is, so I had to use a input queue to handle the audio via button presses, and now I have a basic UI that displays the current playback state.
+
+For my last change to the protoUI, I converted the VCR_OSD_MONO font from ultrakil to LVGL C, so I can use it as the main font for my UI.
+
+Tomorrow goals are to polish the demo UI, README, and CAD to make sure everything is ready for submission ( and hopefully submit too ), after that, there will likely be some more work on the final UI. I think LVGL lets you preview the UI somehow so I'll look into that, because anything I can prototype before I get my parts is good. Once I do get my parts, I'll also journal the assembly, and road to a physical v1, so stay tuned.
+
+> *time spent: 3hrs*
