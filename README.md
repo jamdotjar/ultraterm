@@ -17,6 +17,14 @@ This project was made as mostly a fun intro to custom hardware. I've made keyboa
 If you happen to make your own, I'd suggest either 3d-printing it in blue for minimum effort, or printing it in grey, painting it, then scuffing the paint to give it the worn look it has in-game. 
 
 ## Gallery
+![ULTRATERM product render in ULTRAKILL enviroment](gallery/ent-replaced.png)
+![ULTRAKILL Cybergrind terminal in ULTRAKILL enviroment](gallery/ent-original.png)
+![ULTRATERM front and center product render on black background](gallery/bl-front.png)
+![ULTRATERM left angle product render on black background](gallery/bl-ang-left.png)
+![ULTRATERM right angle product render on black backgroundr](gallery/bl-ang-right.png)
+![ULTRATERM right angle wireframe render on black background](gallery/bl-ang-right-wireframe.png)
+![ULTRATERM back IO render product render on black background](gallery/bl-back.png)
+
 
 
 ## PCB
@@ -55,3 +63,13 @@ If you happen to make your own, I'd suggest either 3d-printing it in blue for mi
 | Total | 1 |  95.21| | |  
 ## Assembly
 
+*we'll see how this goes once I get the parts in*
+
+
+## LICENSE
+
+This project uses the [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) for all firmware, documentation, renders, and other writing. The hardware is lisenced under the [CERN-OHL-W v2](https://ohwr.org/cern_ohl_w_v2.txt)
+x
+> This project was heavily inspired by the game ULTRAKILL, created by Hakita (Arsi "Hakita" Patala). The ULTRATERM design, as well as some assets used in renders are derived from or inspired by ULTRAKILL.
+All rights to ULTRAKILL belong to Hakita and New Blood Interactive. This project is not affiliated with or endorsed by Hakita or New Blood. 
+( [ULTRAKILL is a banger game, you should totally get it, it's like 20 bucks ](http://devilmayquake.com))
