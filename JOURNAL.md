@@ -269,6 +269,10 @@ Then I pulled in the actual terminal model ( thanks again to me for scraping it 
 
 Either way, that got me the entrance area, and let me finally finish setting up my scenes. Yay. On the bright side, I'm actually almost done for real this time™ 
 
+As a last ditch effort for "today" I finished the two component renders for the header. Tomorrow I can do the differnt angles of the main device. 
+![image](https://github.com/user-attachments/assets/deadc612-c06f-4633-b0ef-7f057845fa1b)
+![image](https://github.com/user-attachments/assets/348a694f-bd0e-423b-81a8-635d045b20f0)
+
 > *time spent: 2.5hrs*
 
 
