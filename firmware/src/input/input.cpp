@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "input.h"
+#include "audio/audio.h"
 #define BUTTON_1_PIN 15
 #define BUTTON_2_PIN 17
 #define BUTTON_3_PIN 4
@@ -24,7 +25,7 @@ void input_init() {
     pinMode(TOUCH_IRQ_PIN, INPUT_PULLUP);
 }
 
-void set_input_callback(input_callback_t callback) {
+void input_set_callback(input_callback_t callback) {
     event_callback = callback; 
 }
 
@@ -66,13 +67,13 @@ void input_update() {
 
 }
 
-void handle_input(const input_event_t event) {// handles the event callback for input
+void handle_input(const input_event_t event) { // handles the event callback for input
     switch (event.type) {
         case INPUT_BUTTON:
             switch (event.data.button) {
                 case BUTTON_LEFT:
                     if (audioCommandQueue != NULL) {
-                        audio_command_t cmd = CMD_PREV;
+                        audio_command_t cmd = CMD_STOP;
                         xQueueSend(audioCommandQueue, &cmd, 0);
                     }
                     break;
@@ -92,9 +93,10 @@ void handle_input(const input_event_t event) {// handles the event callback for 
             break;
         case INPUT_TOUCH:
             Serial.printf("Touch at (%d, %d)\n", event.data.touch.x, event.data.touch.y);
-             if (audioCommandQueue != NULL) { 
-                audio_command_t cmd = CMD_PAUSE;
+            if (audioCommandQueue != NULL) { 
+                audio_command_t cmd = CMD_NEXT;
                 xQueueSend(audioCommandQueue, &cmd, 0);
             break;
+            }
+        }   
     }
-}

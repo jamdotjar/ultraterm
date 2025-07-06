@@ -36,7 +36,7 @@ void audio_init() {
 }
 
 void audio_play() {
-    if is_paused {
+    if (is_paused()) {
         resume_stream();
         return;
     }
@@ -67,6 +67,18 @@ void audio_pause() {
 }
 void audio_resume() {
     resume_stream();
+}
+
+void audio_toggle() {
+    if (!is_playing()) {
+        audio_play();
+        return;
+    }
+    if (is_paused()) {
+        audio_resume();
+    } else {
+        audio_pause();
+    }
 }
 
 void audio_stop() {

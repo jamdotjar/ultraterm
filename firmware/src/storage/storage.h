@@ -12,6 +12,7 @@ int32_t get_stream(uint8_t *data, int32_t bytes);
 void pause_stream();
 void resume_stream();
 bool is_paused();
+bool is_playing();
 void seek_to(size_t position);
 
 #endif // STORAGE_H

@@ -145,6 +145,9 @@ void resume_stream() {
 bool is_paused() {
     return paused;
 }
+bool is_playing() {
+    return fileOpen;
+}
 
 void seek_to(size_t position) {
     if (fileOpen) {
