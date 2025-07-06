@@ -258,3 +258,17 @@ For my last change to the protoUI, I converted the VCR_OSD_MONO font from ultrak
 Tomorrow goals are to polish the demo UI, README, and CAD to make sure everything is ready for submission ( and hopefully submit too ), after that, there will likely be some more work on the final UI. I think LVGL lets you preview the UI somehow so I'll look into that, because anything I can prototype before I get my parts is good. Once I do get my parts, I'll also journal the assembly, and road to a physical v1, so stay tuned.
 
 > *time spent: 3hrs*
+
+### 2025/07/05
+<img width="1028" alt="image" src="https://github.com/user-attachments/assets/8fa993c0-1528-4e55-84e6-4c6d61234d58" />
+*sucess*
+I was busy most of today, but I did manage to get my firmware to compile in the state I want it to which at this point is my only real metric for whether or not it will work. Once I was happy with that, I turned my attention back towards the readme, as I wanted some images to put in the gallery. I needed some simple renders in blender, showing what the whole thing might look like. I also wanted one, more stylized "header" image to go right at the top. I didn't have a photo of the in-game terminal anywhere in the readme so far, so including it in this seemed like a good idea. Since this would be *the* headliner image, I decided to actually give it an ounce of planning.  What I managed to come up with was a scene where it's split between the original terminal and my version, in their respective enviroments. ( hell and desk ). 
+I started by importing my terminal into blender, and setting up a material. I decided to try and mimic the texture of a 3d print, which lead to this node setup:
+<img width="1470" alt="image" src="https://github.com/user-attachments/assets/9687a8e9-9208-4a3f-b50a-90be7e9104e4" />
+Then I pulled in the actual terminal model ( thanks again to me for scraping it back in may ), and promptly had to go digging around the unity project anyways to find the elevator model. Unity happend to lose every single texture, so I had to resort to the somehwat outdated model collection I found online.
+
+Either way, that got me the entrance area, and let me finally finish setting up my scenes. Yay. On the bright side, I'm actually almost done for real this time™ 
+
+> *time spent: 2.5hrs*
+
+
