@@ -1,11 +1,11 @@
 # ULTRATERM
-![Hero image](gallery/key_preview.PNG)
+![Hero image](gallery/key_preview.png)
 - A 2000mAh battery
 - Bluetooth headphone support
 - USB-C storage interface
 - Removable SD card storage ( and a custom microSD card adapter )
 The case is designed to be entirely 3D printable, and assembled without adhesive or fasteners.
-While the terminal isn't a perfect replica, it's decently close. ( for example, there's none of the wires near the top, but there is a magnetic attachment point so I *can* add them (
+While the terminal isn't a perfect replica, it's decently close. ( for example, there's none of the wires near the top, but there is a magnetic attachment point so I *can* add them )
 
 This project was made as mostly a fun intro to custom hardware. I've made keyboards before, but design wise those are fairly simplec ( this isn't much more complicated ). I decided to shape it after the ULTRAKILL Cybergrind terminal because that's the one that handles  cybergrind music ingame, so I thought that would be a cool part to try and recreate. Even though it isn't *the* classic terminal, its form factor is also a *lot* more forgiving to fit a screen and PCB and stuff into when compared to the shop terminals, which also don't have as many good options for physical interface. 
 
