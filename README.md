@@ -26,13 +26,16 @@ If you happen to make your own, I'd suggest either 3d-printing it in blue for mi
 <img width="400" alt="Screenshot 2025-07-03 at 11 37 01 PM" src="https://github.com/user-attachments/assets/cc42b526-2fa3-4005-8990-93430f955d95" />
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/86971548-41dc-4e53-9309-176ed50dba61" />
 
-
 ## Case
 <img width="380" alt="Screenshot 2025-07-03 at 11 41 00 PM" src="https://github.com/user-attachments/assets/c7ed8e2f-58ae-4164-a7fb-76fb8261c662" />
 <img width="380" alt="Screenshot 2025-07-03 at 11 40 50 PM" src="https://github.com/user-attachments/assets/8aa4eb87-1eaa-4392-a68d-9a0aa4ad6cea" />
 
 <img width="380" alt="Screenshot 2025-07-03 at 11 45 09 PM" src="https://github.com/user-attachments/assets/552af0e2-f642-4052-b81a-d14f586bfd60" />
 <img width="380" alt="Screenshot 2025-07-03 at 11 44 03 PM" src="https://github.com/user-attachments/assets/f08572af-d590-4923-b969-a47b4e9e34b6" />
+
+### Wiring
+
+![image](https://github.com/user-attachments/assets/18c00dd0-d2a3-4937-aa91-c0b85836bf9b)
 
 ## BOM 
 *prices in usd*
