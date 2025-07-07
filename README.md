@@ -1,10 +1,5 @@
 # ULTRATERM
-ULTRATERM is a miniature replica of an ULTRAKILL settings terminal ( like the one used in cybergrind ), that acts as a bluetooth audio player.
-> ***NOTE**: this project is a WIP, check out the [journal](JOURNAL.md) for progress updates! Right now I'm:* `polishing my readme`
-## Design
-The terminal sits at around 125mm tall, with a 57x104mm footprint. It was designed to look cool, be fairly accurate, and act as a (mostly) stand alone device. It features:
-- 2.4" TFT display
-- Touchscreen + 3 physical buttons
+![Hero image](gallery/header.PNG)
 - A 2000mAh battery
 - Bluetooth headphone support
 - USB-C storage interface
@@ -17,15 +12,12 @@ This project was made as mostly a fun intro to custom hardware. I've made keyboa
 If you happen to make your own, I'd suggest either 3d-printing it in blue for minimum effort, or printing it in grey, painting it, then scuffing the paint to give it the worn look it has in-game. 
 
 ## Gallery
-![ULTRATERM product render in ULTRAKILL enviroment](gallery/ent-replaced.png)
-![ULTRAKILL Cybergrind terminal in ULTRAKILL enviroment](gallery/ent-original.png)
-![ULTRATERM front and center product render on black background](gallery/bl-front.png)
+
 ![ULTRATERM left angle product render on black background](gallery/bl-ang-left.png)
-![ULTRATERM right angle product render on black backgroundr](gallery/bl-ang-right.png)
-![ULTRATERM right angle wireframe render on black background](gallery/bl-ang-right-wireframe.png)
 ![ULTRATERM back IO render product render on black background](gallery/bl-back.png)
-
-
+![ULTRATERM cutaway](gallery/cutaway.PNG)
+![ULTRATERM product render in ULTRAKILL enviroment](gallery/ent-replaced.png)
+*more in [./gallery](gallery)*
 
 ## PCB
 <img width="875" alt="image" src="https://github.com/user-attachments/assets/9fd5e89d-9d3f-4c49-aeb6-2983ae4dbfe5" />
@@ -65,11 +57,11 @@ If you happen to make your own, I'd suggest either 3d-printing it in blue for mi
 
 *we'll see how this goes once I get the parts in*
 
-
 ## LICENSE
 
-This project uses the [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) for all firmware, documentation, renders, and other writing. The hardware is lisenced under the [CERN-OHL-W v2](https://ohwr.org/cern_ohl_w_v2.txt)
-x
+This project uses the [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) for all firmware, documentation, renders, and other writing. Hardware including all Case and PCB designs, is licensed under the [CERN-OHL-W v2](https://ohwr.org/cern_ohl_w_v2.txt)
 > This project was heavily inspired by the game ULTRAKILL, created by Hakita (Arsi "Hakita" Patala). The ULTRATERM design, as well as some assets used in renders are derived from or inspired by ULTRAKILL.
 All rights to ULTRAKILL belong to Hakita and New Blood Interactive. This project is not affiliated with or endorsed by Hakita or New Blood. 
 ( [ULTRAKILL is a banger game, you should totally get it, it's like 20 bucks ](http://devilmayquake.com))
+
+This project was made for [*highway*](https://highway.hackclub.com)
