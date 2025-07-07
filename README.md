@@ -26,7 +26,7 @@ If you happen to make your own, I'd suggest either 3d-printing it in blue for mi
 
 ![ULTRATERM back IO render product render on black background](gallery/bl-back.png)
 ![ULTRATERM cutaway](gallery/cutaway.PNG)
-![ULTRATERM product render in ULTRAKILL enviroment](gallery/header.png)
+![ULTRATERM product render in ULTRAKILL enviroment](gallery/header.PNG)
 ![ULTRATERM left angle product render on black background](gallery/bl-ang-left.png)
 *more in [./gallery](gallery)*
 
