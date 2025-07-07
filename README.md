@@ -1,5 +1,5 @@
 # ULTRATERM
-![Hero image](gallery/header.PNG)
+![Hero image](gallery/key_preview.PNG)
 - A 2000mAh battery
 - Bluetooth headphone support
 - USB-C storage interface
@@ -13,10 +13,11 @@ If you happen to make your own, I'd suggest either 3d-printing it in blue for mi
 
 ## Gallery
 
-![ULTRATERM left angle product render on black background](gallery/bl-ang-left.png)
+
 ![ULTRATERM back IO render product render on black background](gallery/bl-back.png)
 ![ULTRATERM cutaway](gallery/cutaway.PNG)
-![ULTRATERM product render in ULTRAKILL enviroment](gallery/ent-replaced.png)
+![ULTRATERM product render in ULTRAKILL enviroment](gallery/header.png)
+![ULTRATERM left angle product render on black background](gallery/bl-ang-left.png)
 *more in [./gallery](gallery)*
 
 ## PCB
