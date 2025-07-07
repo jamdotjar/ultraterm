@@ -273,6 +273,28 @@ As a last ditch effort for "today" I finished the two component renders for the 
 ![image](https://github.com/user-attachments/assets/deadc612-c06f-4633-b0ef-7f057845fa1b)
 ![image](https://github.com/user-attachments/assets/348a694f-bd0e-423b-81a8-635d045b20f0)
 
-> *time spent: 2.5hrs*
+> *time spent: 4hrs*
+
+### 2025/07/06
+Right back into blender today, I spent the morning working on a few more renders. *they're different, trust*
+![image](https://github.com/user-attachments/assets/5c40f58e-93f5-4824-87b6-0170f561740e)
+![image](https://github.com/user-attachments/assets/07931fa0-85d6-4eb3-93fe-fce6422c12e0)
+
+After I was good with the hell reners, I popped back into my void to get some "product photos". I had to adjust the lighting on the blackvoid renders, as it was way too harsh before, so I just went back to a basic 3 point lighting setup.
+
+I just spent the last 4 hours on renders, here's the rest of what I did!
+![image](https://github.com/user-attachments/assets/0c2763c0-bf83-46dc-a4e3-320362d153f7)
+![image](https://github.com/user-attachments/assets/53fddfd7-799c-4390-9113-db08df8f2975)
+![image](https://github.com/user-attachments/assets/976a2321-bda4-421f-a562-76bde7e03f08)
+![image](https://github.com/user-attachments/assets/05f9f6b3-7ee4-4262-a1bd-9a390902747b)
+
+After that, I took the images and tried to combine some together to get a header, and a cutaway view. I also updated the README with Lisences and other legal stuff, and added a lil highway link. I'll add a less little one here, because if you're reading *this* you definitely care enough to check out Hack Club. 
+
+![A badge of a Cerberus and a raccoon laughing together, with the text "HIGHWAY" and "HACK CLUB" beside them.](https://hc-cdn.hel1.your-objectstorage.com/s/v3/0bbcca68ffa3845300bb76940f8ad91fd53d2d68_06-30-2025-1618.png)
+
+I'm going to ask for some feedback from friends, then I'll submit!
+
+> *time spent: 5hrs*
+> *time spent up to this point: 60hrs ( I think )*
 
 
