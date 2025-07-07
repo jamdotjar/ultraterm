@@ -48,25 +48,25 @@ If you happen to make your own, I'd suggest either 3d-printing it in blue for mi
 ![image](https://github.com/user-attachments/assets/18c00dd0-d2a3-4937-aa91-c0b85836bf9b)
 
 ## BOM 
-*prices in usd, see [bom.csv](/BOM.CSV) for links*
-| Item | Quantity | Price | Supplier | Notes |
-| --------------- | --------------- | --------------- | --------------- | --------------- |
-| PCB | 5 | 4.7 | JLCPCB | |
-| TINYPICO v2 | 1 | 39.5| Digikey | 29.41 + 10.00 shipping ( better than other places charging 20+ 25)|
-|TZT 240x320 2.8" SPI ST7789V LCD Touch Panel | 1 | 7.09 | Aliexpress | |
-| 3.7v 2000mah LiPo battery | 1 | 16.92 | Amazon | price comparable to ali, with substantially faster shipping options |
-| Pin Headers | 20 | 2.00 | Aliexpress | for stupid LCD mounting soln. |
-| 22Awg wire | 5m | 2.4 | Aliexpress | front panel mount + battery backup soln. |
-| 32gb microSD card |1 | 4.7 | LCSC | | 
-| 32gb SD card|1 | 5.8 | LCSC | |
-| LM809 | 1 | 0.66 | LCSC | | 
-| JST-PH-2 | 10 | 0.59 | LCSC | |
-| SPDT slide switch | 20 | 0.48  | LCSC | |
-| 6mm pushbutton | 50 | 0.84 | LCSC | |
-| Amphenol 10067847-001RLF | 1 | 1.31 | LCSC | |
-| Hirose C719027 | 1| 1.04 | LCSC |
-| LCSC Shipping || 12.88  | LCSC | | 
-| Total | 1 |  95.21| | |  
+*prices in usd, see [bom.csv](/BOM.CSV) too*
+|Item                                        |Quantity|Price|Supplier  |Notes                                                             |link                                                                                                      |
+|--------------------------------------------|--------|-----|----------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+|PCB                                         |5       |4.7  |JLCPCB    |                                                                  |https://jlcpcb.com/                                                                                       |
+|TINYPICO v2                                 |1       |39.5 |Digikey   |29.41 + 10.00 shipping ( better than other places charging 20+ 25)|https://www.digikey.ca/en/products/detail/adafruit-industries-llc/5028/14307383                           |
+|TZT 240x320 2.8" SPI ST7789V LCD Touch Panel|1       |7.09 |Aliexpress|                                                                  |https://www.aliexpress.com/item/1005004557916570.html                                                     |
+|3.7v 2000mah LiPo battery                   |1       |16.92|Amazon    |price comparable to ali                                           |https://www.amazon.ca/Rechargeable-Controller-CUH-ZCT1-Electronic-Bluetooth/dp/B0CG178SHB                 |
+|Pin Headers                                 |20      |2.00 |Aliexpress|for stupid LCD mounting soln.                                     |https://www.aliexpress.com/item/4000873858801                                                             |
+|22Awg wire                                  |5m      |2.4  |Aliexpress|front panel mount + battery backup soln                           |https://www.aliexpress.com/item/1005004712828392.html                                                     |
+|32gb microSD card                           |2       |4.7  |LCSC      |second waives 3$ fee, saves 1 dollar on order total               |https://lcsc.com/product-detail/Storage-products_SDTRUVAL-SDSDQAD-016G-SDWCK_C42416577.html               |
+|32gb SD card                                |1       |5.8  |LCSC      |                                                                  |https://lcsc.com/product-detail/Storage-products_MK-MKSD032G-CGT1A_C22374946.html                         |
+|LM809                                       |1       |0.66 |LCSC      |                                                                  |https://lcsc.com/product-detail/Supervisor-and-Reset-ICs_Texas-Instruments-LM809M3X-4-38-NOPB_C544520.html|
+|JST-PH-2                                    |10      |0.59 |LCSC      |                                                                  |https://lcsc.com/product-detail/Wire-To-Board-Connector_JST-B2B-PH-K-K-LF-SN_C265438.html                 |
+|SPDT slide switch                           |20      |0.48 |LCSC      |                                                                  |https://lcsc.com/product-detail/Slide-Switches_SHOU-HAN-SK12D07VG4_C393937.html                           |
+|6mm pushbutton                              |50      |0.84 |LCSC      |                                                                  |https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS665CJ_C393938.html                            |
+|Amphenol 10067847-001RLF                    |1       |1.31 |LCSC      |                                                                  |https://lcsc.com/product-detail/SD-Card-Memory-Card-Connector_Amphenol-ICC-10067847-001RLF_C569097.html   |
+|Hirose C719027                              |1       |1.04 |LCSC      |                                                                  |https://lcsc.com/product-detail/SD-Card-Memory-Card-Connector_HRS-Hirose-DM3D-SF_C719027.html             |
+|LCSC Shipping                               |        |12.88|LCSC      |                                                                  |                                                                                                          |
+|Total                                       |1       |95.21|          |                                                                  |                                                                                                          |
 ## Assembly
 
 *we'll see how this goes once I get the parts in*
