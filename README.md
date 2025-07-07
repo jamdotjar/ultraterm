@@ -48,7 +48,7 @@ If you happen to make your own, I'd suggest either 3d-printing it in blue for mi
 ![image](https://github.com/user-attachments/assets/18c00dd0-d2a3-4937-aa91-c0b85836bf9b)
 
 ## BOM 
-*prices in usd*
+*prices in usd, see [bom.csv](/BOM.CSV) for links*
 | Item | Quantity | Price | Supplier | Notes |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
 | PCB | 5 | 4.7 | JLCPCB | |

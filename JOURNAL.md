@@ -1,11 +1,14 @@
 ---
-title: "Ultraterm"
+title: "ULTRATERM"
 author: "Finn H"
 description: "A bluetooth MP3 player styled as a miniature replica of the ULTRAKILL cybergrind terminal"
 created_at: "2025-05-19"
 ---
 
-# Journal
+# ULTRATERM Journal
+
+> *time spent up to when this was last changed: 60hrs*
+
 ### 2025/05/19 ( and the past 3 days I didnt journal )
 This has been mostly just research on *how* I'm actually pulling this off. I've ( tenatively ) setteled on this as a **very rough** list of what I'll use:
 - ESP32s3
@@ -295,6 +298,6 @@ After that, I took the images and tried to combine some together to get a header
 I'm going to ask for some feedback from friends, then I'll submit!
 
 > *time spent: 5hrs*
-> *time spent up to this point: 60hrs ( I think )*
+
 
 
