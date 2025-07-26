@@ -299,5 +299,13 @@ I'm going to ask for some feedback from friends, then I'll submit!
 
 > *time spent: 5hrs*
 
+## 2025/07/20
+Another big break, but this time because I went to Undercity. 10/10 experience lol. In the time since then, I've printed out my case, and everything fits. I still need to paint it, but it should be good to go as soon as I get the rest of the parts. Speaking of the rest of the parts, my grant came in today so I could finally start ordering everything. I did, but not before plastering the PCBs with some decoration! 
+
+<img width="404" height="469" alt="image" src="https://github.com/user-attachments/assets/bd0d71c9-c8d6-4840-aecb-ab1461fa85f1" />
+<img width="482" height="504" alt="image" src="https://github.com/user-attachments/assets/5cb35998-c5fe-4331-8cb8-595bd073cc26" />
+
+> *time spent: 2hrs*
+
 
 
