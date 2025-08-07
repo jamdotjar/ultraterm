@@ -12,7 +12,29 @@ int currentSong = 0;
 // The supported audio codec in ESP32 A2DP is SBC. SBC audio stream is encoded
 // from PCM data normally formatted as 44.1kHz sampling rate, two-channel 16-bit sample data
 int32_t get_data(uint8_t *data, int32_t bytes) {
-    memset(data, 0, bytes);
+    // Generate a 440Hz sine wave (A4 note)
+    static float phase = 0.0f;
+    const float frequency = 440.0f;  // 440Hz = A4 note
+    const float amplitude = 0.5f;    // Half amplitude to avoid clipping
+    const float phase_increment = 2.0f * M_PI * frequency / 44100.0f;  // Assuming 44.1kHz sample rate
+    
+    // Fill the buffer with sine wave data
+    for (int i = 0; i < bytes; i += 4) {
+        // Generate sample value between -amplitude and +amplitude
+        float sample = amplitude * sin(phase);
+        phase += phase_increment;
+        if (phase > 2.0f * M_PI) {
+            phase -= 2.0f * M_PI;  // Keep phase in [0, 2π] range
+        }
+        
+        // Convert float to 16-bit signed integer
+        int16_t sample_int = (int16_t)(sample * 32767.0f);
+        
+        // Store the same sample in both channels (stereo)
+        data[i] = data[i + 2] = sample_int & 0xFF;          // Low byte
+        data[i + 1] = data[i + 3] = (sample_int >> 8) & 0xFF;  // High byte
+    }
+    
     return bytes;
 }
 
@@ -20,7 +42,7 @@ int32_t get_data(uint8_t *data, int32_t bytes) {
 // callback to build a list.
 bool isValid(const char* ssid, esp_bd_addr_t address, int rssi){
    Serial.printf("Available device: %s (RSSI: %d)\n", ssid, rssi);
-   return true;
+   return false;
 }
 
 void audio_init() {
